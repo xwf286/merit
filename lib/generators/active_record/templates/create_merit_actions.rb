@@ -5,6 +5,7 @@ class CreateMeritActions < ActiveRecord::Migration
       t.string  :action_method
       t.integer :action_value
       t.boolean :had_errors, default: false
+      t.string  :target_type
       t.string  :target_model
       t.integer :target_id
       t.boolean :processed, default: false
